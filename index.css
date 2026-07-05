@@ -1,0 +1,245 @@
+body{
+    color: black;
+    background-color: pink;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+    transition: color pink 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid green;
+    transition: 0.3s;
+}
+
+header img:hover {
+    transform: scale(1.05);
+}
+
+.center{
+    text-align: center;
+}
+
+h1{
+    color: darkgreen;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+margin: 20px;
+text-align: center;
+}
+
+footer p {
+    margin-top: 2px;
+}
+
+p {
+    line-height: 1.7;
+    text-align: justify;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+nav a {
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: darkorchid;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+nav {
+    margin-bottom: 30px;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+}
+
+.container {
+    padding: 30px 50px;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+    background-color: #fff8fb;
+    border: 2px solid darkgreen;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    color: darkgreen;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 0;
+}
+
+nav a{
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    background-color: darkgreen;
+    color: white;
+}
+
+.card{
+    background:#fff;
+    border-left:6px solid darkgreen;
+}
+
+.container{
+    animation: aparecer 1s;
+}
+
+@keyframes aparecer{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .container{
+        padding:20px;
+    }
+
+    ul{
+        flex-direction: column;
+        gap:15px;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items:center;
+    }
+
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+
+    .container {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+    }
+
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer a {
+        margin: 10px 0;
+    }
+
+    footer img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
+
+
+ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 16px;
+}
